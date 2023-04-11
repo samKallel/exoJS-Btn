@@ -6,4 +6,11 @@ incrementation.addEventListener('click', function IncrBtn(){
     compteur.innerHTML++;});
 
 decrementation.addEventListener('click', function DecrBtn(){
-        compteur.textContent --;})
+    
+    if (compteur.innerHTML >0){
+        compteur.innerHTML--;
+    }else {
+        compteur.innerHTML= 0;
+    }
+     }
+)
